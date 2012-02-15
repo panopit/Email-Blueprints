@@ -386,14 +386,14 @@
                                     <table border="0" cellpadding="10" cellspacing="0" width="100%">
                                     	<tr>
                                         	<td valign="top">
-                                            	<div mc:edit="std_preheader_content">
-                                                	 Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients.
+                                            	<div class="edit" id="preheader_content">
+                                                	 Preencha este texto para explicar brevemente o conteúdo de sua mensagem. Este texto irá aparecer no preview de alguns clientes de email.
                                                 </div>
                                             </td>
                                             <!-- *|IFNOT:ARCHIVE_PAGE|* -->
 											<td valign="top" width="190">
                                             	<div mc:edit="std_preheader_links">
-                                                	Is this email not displaying correctly?<br /><a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
+                                                	O email não aparece corretamente?<br /><a href="#" class="weblink" target="_blank">Veja em seu navegador</a>.
                                                 </div>
                                             </td>
 											<!-- *|END:IF|* -->
@@ -414,7 +414,7 @@
                                             <td class="headerContent">
                                             
                                             	<!-- // Begin Module: Standard Header Image \\ -->
-                                            	<img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_600.gif" style="max-width:600px;" id="headerImage campaign-icon" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                            	<img src="http://placehold.it/600x150" style="max-width:600px;" id="headerImage campaign-icon" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
                                             	<!-- // End Module: Standard Header Image \\ -->
                                             
                                             </td>
@@ -439,33 +439,33 @@
                                                                 <tr>
                                                                     <td valign="top" style="padding-top:10px; padding-right:20px; padding-left:20px;">
                                                                         <table border="0" cellpadding="0" cellspacing="4">
-                                                                            <tr mc:hideable>
+                                                                            <tr>
                                                                                 <td align="left" valign="middle" width="16">
-                                                                                    <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/sfs_icon_facebook.png" style="margin:0 !important;" />
+                                                                                    <img src="http://cdn3.iconfinder.com/data/icons/socialnetworking/16/facebook.png" style="margin:0 !important;" />
                                                                                 </td>
                                                                                 <td align="left" valign="top">
                                                                                     <div mc:edit="sbwi_link_one">
-                                                                                        <a href="*|FACEBOOK:PROFILEURL|*">Friend on Facebook</a>
+                                                                                        <a href="#" class="list facebook">Facebook</a>
                                                                                     </div>
                                                                                 </td>
                                                                             </tr>
-                                                                            <tr mc:hideable>
+                                                                            <tr>
                                                                                 <td align="left" valign="middle" width="16">
-                                                                                    <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/sfs_icon_twitter.png" style="margin:0 !important;" />
+                                                                                    <img src="http://cdn3.iconfinder.com/data/icons/socialnetworking/16/twitter.png" style="margin:0 !important;" />
                                                                                 </td>
                                                                                 <td align="left" valign="top">
                                                                                     <div mc:edit="sbwi_link_two">
-                                                                                        <a href="*|TWITTER:PROFILEURL|*">Follow on Twitter</a>
+                                                                                        <a href="#" class="list twitter">Twitter</a>
                                                                                     </div>
                                                                                 </td>
                                                                             </tr>
-                                                                            <tr mc:hideable>
+                                                                            <tr>
                                                                                 <td align="left" valign="middle" width="16">
-                                                                                    <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/sfs_icon_forward.png" style="margin:0 !important;" />
+                                                                                    <img src="http://cdn3.iconfinder.com/data/icons/socialnetworking/16/email.png" style="margin:0 !important;" />
                                                                                 </td>
                                                                                 <td align="left" valign="top">
-                                                                                    <div mc:edit="sbwi_link_three">
-                                                                                        <a href="*|FORWARD|*">Forward to a Friend</a>
+                                                                                    <div>
+                                                                                        <a href="#" class="forward">Encaminhar</a>
                                                                                     </div>
                                                                                 </td>
                                                                             </tr>
@@ -479,10 +479,10 @@
                                                             <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                                 <tr mc:repeatable>
                                                                     <td valign="top">
-                                                                        <img src="http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_160.gif" style="max-width:160px;" mc:label="image" mc:edit="tiwc200_image00" />
+                                                                        <img src="http://placehold.it/160x160" style="max-width:160px;" mc:label="image" mc:edit="tiwc200_image00" />
                                                                         <div mc:edit="tiwc200_content00">
-			 	                                                            <h4 class="h4">Heading 4</h4>
-			                                                                <strong>Repeatable content blocks:</strong> Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks. You can also <a href="http://www.mailchimp.com/kb/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">get a little fancy</a>: repeat blocks and remove all text to make image "gallery" sections, or do the opposite and remove images for text-only blocks!
+			 	                                                            <h4 class="h4">Título 4</h4>
+			                                                                <strong>Bloco de repetição:</strong> Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks. You can also <a href="http://www.mailchimp.com/kb/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">get a little fancy</a>: repeat blocks and remove all text to make image "gallery" sections, or do the opposite and remove images for text-only blocks!
                                                                         </div>
                                                                     </td>
                                                                 </tr>
@@ -504,10 +504,10 @@
                                                                 <tr>
                                                                     <td valign="top">
 			                                                            <div mc:edit="std_content00">
-			                                                                <h1 class="h1">Heading 1</h1>
-			                                                                <h2 class="h2">Heading 2</h2>
-			                                                                <h3 class="h3">Heading 3</h3>
-			                                                                <h4 class="h4">Heading 4</h4>
+			                                                                <h1 class="h1">Título 1</h1>
+			                                                                <h2 class="h2">Título 2</h2>
+			                                                                <h3 class="h3">Título 3</h3>
+			                                                                <h4 class="h4">Título 4</h4>
 			                                                                <strong>Getting started:</strong> Customize your template by clicking on the style editor tabs up above. Set your fonts, colors, and styles. After setting your styling is all done you can click here in this area, delete the text, and start adding your own awesome content!
 			                                                                <br />
 			                                                                <br />
@@ -539,14 +539,14 @@
                                                     <tr>
                                                         <td colspan="2" valign="middle" id="social">
                                                             <div mc:edit="std_social">
-                                                                &nbsp;<a href="*|TWITTER:PROFILEURL|*">follow on Twitter</a> | <a href="*|FACEBOOK:PROFILEURL|*">friend on Facebook</a> | <a href="*|FORWARD|*">forward to a friend</a>&nbsp;
+                                                                &nbsp;<a href="#" class="list twitter">Twitter</a> | <a href="#" class="list facebook">Facebook</a> | <a href="#" class="forward">Encaminhar</a>&nbsp;
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td valign="top" width="350">
                                                             <div mc:edit="std_footer">
-																<em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
+																<em>Copyright &copy; <span class="date year">2012</span> <span class="list company">Empresa</span>, All rights reserved.</em>
 																<br />
 																*|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*
 																<br />
